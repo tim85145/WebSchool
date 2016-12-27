@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/網頁教室.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+	<h1>jQuery教學</h1>
+	<h2>前言</h2>
+	<p>jQuery是一個小而巧且富有特色的JavaScript的函式庫，藉由一些能在眾多瀏覽器而且容易使用的應用程式設計界面，它能使編輯HTML更為方便，像是元素走訪、事件處理、動畫或是非同步呼叫，也因為jQuery眾多的功能性與擴展性，影響了眾多的工程師架構網頁的方式</p><!--jQuery is a fast, small, and feature-rich JavaScript library (JavaScript 函式庫) It makes things like HTML document traversal (元素走訪) and manipulation(元素操作), event handling (事件處理), animation (動畫), and Ajax (非同步呼叫) much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed theway that millions of people write JavaScript-->
+	<h2>介紹</h2>
+	<h3>jQuery的特色</h3>
+		<ul>
+			<dd>- 網頁元素操作</dd>
+			<dd>- CSS樣式操作</dd>
+			<dd>- 事件處理</dd>
+			<dd>- 效果或動畫</dd>
+			<dd>- 非同步呼叫</dd>
+			<dd>&nbsp;&nbsp;其他</dd>
+		</ul>	
+	<h3>jQuery的選擇器 <small>$(selector).action()</small></h3>
+		<ul>
+			<dd>- 使用 $ 符號代表定義或使用jQuery功能</dd>
+			<dd>- 使用 (...) 選擇器選擇頁面元素</dd>
+			<dd>- 使用 ...() 指定操作或行為</dd>
+		</ul>
+	<h3>選擇類型</h3>
+		<table class="table table-hover">- 標籤
+			<thead>
+				<tr><th>jQuery 選擇器</th> <th>說明</th></tr>
+			</thead>
+			<tbody>
+				<tr><td>$("p")</td> <td>選取 < p > 標籤</td>
+				<tr><td>$("h1")</td> <td>選取 < h1 > 標籤</td>
+				<tr><td>$(".class")</td> <td>選取帶有<mark>類別</mark> class="class" 的標籤</td></tr>
+				<tr><td>$("#id")</td> <td>選取帶有<mark>識別</mark> id="id" 的標籤</td></tr>
+				<tr><td>$("p#id")</td> <td>選取帶有<mark>識別</mark> id="id" 的 < p > 標籤</td></tr>
+				<tr><td>$("p:nth-of-type(2)")</td> <td>選取第2個 < p > 標籤</td></tr>
+				<tr><td>$("ul li:nth-child(1)")</td> <td>選取子節點特定位置元素</td>
+				<tr><td>$("tr:even")</td> <td>選取表格內偶數列元素</td>
+				<tr><td>$("*")</td> <td>選取所有標籤</td>
+			</tbody>
+		</table>
+		<table class="table table-hover">- 事件
+			<thead>
+				<tr><th>滑鼠</th> <th>鍵盤</th> <th>輸入</th> <th>文件/視窗</th></tr> 
+			</thead>
+			<tbody>
+				<tr><td>click</td>      <td>keypress</td> <td>submit</td> <td>load</td></tr>
+				<tr><td>dblclick</td>   <td>keydown</td>  <td>change</td> <td>resize</td></tr>
+				<tr><td>mouseenter</td> <td>keyup</td>    <td>focus</td>  <td>scroll</td></tr>
+				<tr><td>mouseleave</td> <td></td>         <td>blur</td>   <td>unload</td></tr>
+				<tr><td>hover</td>      <td></td>         <td></td>       <td></td></tr>
+			</tbody>
+		</table>
+	<h2>範例</h2>
+	<h3>選擇<mark>文件</mark></h3>
+	<p>選取任何元素之前，必須先選擇文件document以示選取的元素確實在html的文件內且已就緒ready</p>
+	<img src="images/choose-document.jpg">
+	<h3>選擇<mark>標籤</mark></h3>
+	<p>單純選擇< p >標籤</p>
+	<img src="images/choose-p-hide.jpg">
+	<img src="images/choose-p-hide-slow.jpg">
+	<p>現在按按看上面的文字，若是消失hide了，表示你點到< p >標籤摟，兩者的差別就在於消失的快慢slow</p>
+
+
+
+
+
+</div>
+</body>
+</html>
